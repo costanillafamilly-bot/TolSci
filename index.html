@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Toledo City Science High School</title>
+<link rel="stylesheet" href="style.css">
+</head><body data-x>
+<svg width="0" height="0" style="position:absolute"><defs><symbol id="lg" viewBox="0 0 120 100"><path d="M18 50 0 28l6-2 24 8zM18 56 4 74l8 2 18-14zM102 50l18-22-6-2-24 8zM102 56l14 18-8 2-18-14z" fill="#f5b800"/><circle cx="60" cy="52" r="34" fill="#0a2a6b" stroke="#f5b800" stroke-width="4"/><g fill="none" stroke="#bfe0ff" stroke-width="2.5"><ellipse cx="60" cy="52" rx="26" ry="9"/><ellipse cx="60" cy="52" rx="26" ry="9" transform="rotate(60 60 52)"/><ellipse cx="60" cy="52" rx="26" ry="9" transform="rotate(120 60 52)"/></g><circle cx="60" cy="52" r="6" fill="#f5b800"/></symbol></defs></svg>
+
+<!-- FUTURISTIC CINEMATIC SCHOOL INTRO -->
+<div id="intro" aria-label="Welcome to Toledo City Science High School">
+  <div class="intro-grid" aria-hidden="true"></div>
+  <div class="intro-orb intro-orb-one" aria-hidden="true"></div>
+  <div class="intro-orb intro-orb-two" aria-hidden="true"></div>
+
+  <canvas id="intro-particles" aria-hidden="true"></canvas>
+
+  <div class="intro-scanline" aria-hidden="true"></div>
+
+  <div class="intro-content">
+    <p class="intro-overline">
+      <span class="intro-status-dot"></span>
+      SYSTEM INITIALIZED · TCSHS
+    </p>
+
+    <!-- Change logo.jpg if your logo uses a different filename -->
+    <div class="intro-logo-wrap">
+      <div class="intro-logo-ring intro-ring-one"></div>
+      <div class="intro-logo-ring intro-ring-two"></div>
+      <div class="intro-logo-glow"></div>
+
+      <img
+        class="pl"
+        src="logo.jpg"
+        alt="Toledo City Science High School logo"
+      />
+    </div>
+
+    <div id="it">
+      <p class="intro-welcome">WELCOME TO</p>
+
+      <h1>
+        TOLEDO CITY
+        <span>SCIENCE HIGH SCHOOL</span>
+      </h1>
+
+      <p class="intro-tagline">
+        SCIENCE <i>·</i> RESEARCH <i>·</i> EXCELLENCE <i>·</i> SERVICE
+      </p>
+    </div>
+
+    <div class="intro-progress" aria-hidden="true">
+      <span id="intro-progress-bar"></span>
+    </div>
+
+    <p class="intro-loading" aria-live="polite">
+      <span id="intro-loading-text">INITIALIZING DISCOVERY</span>
+      <span class="intro-loading-dots">•••</span>
+    </p>
+  </div>
+
+  <button id="skip" type="button">SKIP INTRO <span>↗</span></button>
+  <p class="intro-corner intro-corner-left">TCSHS / 2026</p>
+  <p class="intro-corner intro-corner-right">DISCOVER MORE</p>
+</div>
+<!-- END FUTURISTIC INTRO -->
+
+<nav id="nv">
+    <b data-go="home">
+        <img src="logo.jpg" alt="TCSHS Logo" class="school-logo">
+        TCSHS
+    </b><button data-go="life">Life</button><button data-go="strands">Strands</button><button data-go="houses">Houses</button><button data-go="wins">Wins</button><button id="sy">📜 History</button><button class="qb">💌 Quotes</button>
+<button id="pp">🎫 <span id="pc">0</span>/8</button>
+<button class="dot" data-t="sky" style="background:#d9eeff" title="Sky"></button><button class="dot" data-t="royal" style="background:#1d5fd6" title="Royal"></button><button class="dot" data-t="pearl" style="background:#fff" title="Pearl"></button>
+<button data-go="apply" style="background:var(--go);color:#0a2a6b;font-weight:700">Apply ✈</button><button data-go="contact">Contact</button></nav>
+
+<main>
+<div class="v on" id="home"><div class="w"><div class="hero"><div class="fl"><span style="left:6%">⚛️</span><span style="right:8%;animation-delay:-2s">🧬</span><span style="left:14%;margin-top:240px;animation-delay:-3s">🔭</span></div>
+<p style="color:var(--go);letter-spacing:6px;font-weight:700">TOLEDO CITY · CEBU</p><h1><span class="white-text">TOLEDO CITY SCIENCE</span><br><em>HIGH SCHOOL </em></h1><p class="sub" style="margin:14px auto">A science high school in Toledo City, Cebu, where curious students grow into scientists, engineers, business leaders and changemakers.</p><div class="mq"><div>⚛ STEM ✦ ABM ✦ HUMSS ✦ HANDASA ⚡ ✦ TECHNE 🔥 ✦ MANTHANEIN 💧 ✦ SCIRE 🌿 ✦ ⚛ STEM ✦ ABM ✦ HUMSS ✦ HANDASA ⚡ ✦ TECHNE 🔥 ✦ MANTHANEIN 💧 ✦ SCIRE 🌿 ✦ </div></div>
+<div class="row" style="justify-content:center"><button class="btn" data-go="apply">Apply Now</button><button class="btn o" data-go="life">Explore the School</button></div></div>
+<div class="card" style="margin:10px 0 24px;text-align:center;border-color:var(--go)"><h2>Why choose <span>TCSHS</span>?</h2><div class="grid"><div><div class="big">🔬</div><b>Science-focused learning</b><br>Curiosity and experiments every day.</div><div><div class="big">🧠</div><b>3 strands</b><br>STEM, ABM or HUMSS: find your path.</div><div><div class="big">🛡️</div><b>4 proud Houses</b><br>Handasa, Techne, Manthanein, Scire.</div><div><div class="big">🎭</div><b>Clubs for every passion</b><br>Chess, robotics, arts, music and more.</div><div><div class="big">🏆</div><b>Contests &amp; competitions</b><br>Show the world what you can do.</div><div><div class="big">🤝</div><b>A family of learners</b><br>Friends who push you to grow.</div></div><div class="row" style="justify-content:center"><button class="btn" data-go="apply">Apply now ✈</button><button class="btn o qb">💌 Read a quote</button></div></div>
+<div class="grid">
+<div class="card c" data-go="life"><div class="big">🎒</div><h3>Life at Science High</h3>Events, students, competitions and clubs.</div>
+<div class="card c" data-go="strands"><div class="big">🧠</div><h3>Strands</h3>STEM, ABM and HUMSS.</div>
+<div class="card c" data-go="houses"><div class="big">🛡️</div><h3>Houses</h3>Take the quiz, cheer for your House.</div>
+<div class="card"><div class="big">🧪</div><h3>Science Labs</h3>Coming soon.</div>
+<div class="card c" data-go="wins"><div class="big">🏆</div><h3>Achievements</h3>Our hall of fame photos.</div>
+<div class="card c" data-go="apply"><div class="big">✈️</div><h3>Apply</h3>Your boarding pass to TCSHS.</div>
+<div class="card c" data-go="contact"><div class="big">📍</div><h3>Contact &amp; Map</h3>Call, email, visit us.</div></div><h2 style="margin-top:44px">Why <span>TCSHS</span></h2><p class="sub"></p><div class="grid"><div class="card"><div class="big">🔬</div><h3>Hands-on Science</h3>Learn through experiments, research and real projects.</div><div class="card"><div class="big">🧭</div><h3>Three Strands</h3>Choose STEM, ABM or HUMSS to match your goals.</div><div class="card"><div class="big">🛡️</div><h3>House Community</h3>Belong to Handasa, Techne, Manthanein or Scire.</div><div class="card"><div class="big">🎭</div><h3>Clubs for Everyone</h3>From Toastmasters and Chess to Robotics and Performing Arts.</div><div class="card"><div class="big">🏆</div><h3>Proven Achievers</h3>Join students who compete and win.</div><div class="card"><div class="big">🤝</div><h3>Supportive Teachers</h3>Guidance from educators who care about your growth.</div></div><div class="cta"><h2>Ready to take flight?</h2><p>Join the next batch of TCSHS learners.</p><button class="btn" data-go="apply">Start your application</button></div></div></div>
+
+<div class="v" id="life"><div class="w"><h2>Life at <span>Science High</span></h2><p class="sub"></p><div class="tl" id="tl"></div><div class="gl" id="lp"></div>
+<h2 style="margin-top:40px">Clubs &amp; <span>Orgs</span></h2><p class="sub"></p><div class="grid" id="cl"></div></div></div>
+
+<div class="v" id="strands"><div class="w"><h2>Choose your <span>Strand</span></h2><p class="sub"></p><div class="grid">
+<div class="fp"><div><div class="a"><b>STEM</b><h3>Science, Technology, Engineering &amp; Mathematics</h3></div><div class="b"><h3>Subjects &amp; careers</h3>Pre-Calculus, Biology, Chemistry, Physics, Research.<br><b>Careers:</b> doctor, engineer, programmer, architect, pilot.</div></div></div>
+<div class="fp"><div><div class="a"><b>ABM</b><h3>Accountancy, Business &amp; Management</h3></div><div class="b"><h3>Subjects &amp; careers</h3>Accounting, Business Math, Economics, Marketing.<br><b>Careers:</b> entrepreneur, accountant, banker, manager.</div></div></div>
+<div class="fp"><div><div class="a"><b>HUMSS</b><h3>Humanities &amp; Social Sciences</h3></div><div class="b"><h3>Subjects &amp; careers</h3>Creative Writing, Politics, Social Sciences, Community Engagement.<br><b>Careers:</b> teacher, lawyer, journalist, psychologist.</div></div></div></div></div></div>
+
+<div class="v" id="houses"><div class="w"><h2>The <span>4 Houses</span></h2><p class="sub"></p><div class="grid" id="hg"></div>
+<div class="card q" style="margin-top:20px"><h3>Which House are you? 🧪</h3><div id="qa"></div></div></div></div>
+
+<div class="v" id="wins"><div class="w"><h2>Hall of <span>Achievements</span></h2><p class="sub">Our Sci-Highians' proudest wins. </p><div class="tl" id="wt"></div><div class="wg" id="wg"></div></div></div>
+
+<div class="v" id="apply"><div class="w"><h2>Board the <span>TCSHS</span> flight ✈</h2><p class="sub">Everything you need to apply, in one place.</p>
+<div class="row"><a class="btn" target="_blank" rel="noopener" href="https://rb.gy/6h0yp">Apply online ✈</a><button class="btn o" data-go="contact">Ask the Admission Office</button></div>
+<div class="at"><button class="on" data-at="ap1">🛫 Steps</button><button data-at="ap2">📄 Requirements</button><button data-at="ap3">📅 Schedule</button><button data-at="ap4">❓ FAQs</button></div>
+
+<div class="ap on" id="ap1"><div class="bp"><div><h3>BOARDING PASS · ADMISSION</h3><label class="ck"><input type="checkbox">1. Prepare requirements (see Requirements tab)</label><label class="ck"><input type="checkbox">2. Submit your application (online or at the Admission Office)</label><label class="ck"><input type="checkbox">3. Take the admission test</label><label class="ck"><input type="checkbox">4. Interview and results</label><label class="ck"><input type="checkbox">5. Enroll and pick STEM, ABM or HUMSS</label></div>
+<div><small>FLIGHT</small><b style="font-size:30px;display:block">TCSHS</b><small></small><b>Admission Office</b><br><small></small><b>Your Future</b><p><button class="btn" style="background:#0a2a6b;color:#fff!important" data-go="contact">Ask us</button></p></div></div></div>
+
+<div class="ap" id="ap2"><div class="card"><h3>Requirements checklist</h3><small></small>
+<label class="ck"><input type="checkbox">Accomplished application form</label>
+<label class="ck"><input type="checkbox">Report card (Grade 6 or Grade 11) &ndash; photocopy</label>
+<label class="ck"><input type="checkbox">PSA birth certificate (photocopy)</label>
+<label class="ck"><input type="checkbox">Certificate of good moral character</label>
+<label class="ck"><input type="checkbox">2x2 ID pictures (2 pcs)</label>
+<label class="ck"><input type="checkbox">Parent / guardian ID (photocopy)</label></div></div>
+
+<div class="ap" id="ap3"><div class="grid">
+<div class="card"><div class="big">📝</div><h3>Application period</h3>February 09- March 12, 2026</div>
+<div class="card"><div class="big">🧠</div><h3>Admission test</h3> March 14, 2026, 8:00 A.M- 12:00 P.M at TOLEDO CITY SCIENCE HIGH SCHOOL </div>
+<div class="card"><div class="big">🗣️</div><h3>Interview</h3>March 21, 2026 at TOLEDO CITY SCIENCE HIGH SCHOOL</div>
+<div class="card"><div class="big">📢</div><h3>Release of results</h3>It will be posted on April 1 on the official Facebook page of Toledo City Science High School</div>
+<div class="card"><div class="big">🎒</div><h3>Enrollment</h3>📅 Date: June 8
+
+📌 Requirements to Bring:
+
+Original Report Card (SF9)
+
+PSA Birth Certificate (if required)
+
+2 copies of 2×2 ID picture
+
+Long brown envelope
+
+Ballpen
+
+Other documents as instructed by the school</div></div></div>
+
+<div class="ap" id="ap4"><h2 style="margin-top:20px"><span>FAQs</span></h2>
+<details><summary>Who can apply?</summary>Incoming Grade 7 and Grade 11 students with a minimum general average of 90 and no grade below 85, who meet the admission requirements of Toledo City Science High School.</details>
+<details><summary>What are the requirements?</summary>Accomplished application form
+Report card (Grade 6 or Grade 11) – photocopy
+PSA birth certificate (photocopy)
+Certificate of good moral character
+2x2 ID pictures (2 pcs)
+Parent / guardian ID (photocopy)</details>
+<details><summary>When is the admission test?</summary>March 14, 2026, 8:00 A.M- 12:00 P.M at TOLEDO CITY SCIENCE HIGH SCHOOL</details>
+<details><summary>Is there an application fee?</summary>No fee</details>
+<details><summary>What should I bring on test day?</summary> Pencil, ballpen, valid ID, admission slip.</details>
+<details><summary>Which strands are offered?</summary>STEM, ABM and HUMSS.</details>
+<details><summary>What are the Houses?</summary>Handasa (yellow), Techne (red), Manthanein (blue) and Scire (green).</details>
+<details><summary>Are there clubs and organizations?</summary>Yes! Toastmasters, Chess, Robotics, Science Club, Artist Circle, Performing Arts, Campus Ministry and Troubadours.</details>
+<details><summary>Who do I contact for questions?</summary>Go to the Contact tab or tap "Ask the Admission Office" above.</details></div>
+</div></div>
+
+<div class="v" id="contact"><div class="w"><h2>Contact <span>Us</span></h2><p class="sub"></p>
+<div class="grid ct">
+<a class="card c" href="tel:+63 906 444 0876"><div class="big">📞</div><h3>Call</h3><small>0906 444 0876</small></a>
+<a class="card c" href="mailto:303315@deped.gov.ph"><div class="big">✉️</div><h3>Email</h3><small>
+303315@deped.gov.ph</small></a>
+<a class="card c" target="_blank" rel="noopener" href="https://www.facebook.com/share/1DfXwz83rn/"><div class="big">📘</div><h3>Facebook</h3><small>Toledo City Science High School</small></a>
+<button class="card c" id="cp" style="text-align:left"><div class="big">📍</div><h3>Address</h3><small>
+Ilihan Heights, Toledo City, Cebu, Toledo City, Philippines, 6038 </small></button>
+<div class="card"><div class="big">🕘</div><h3>Office hours</h3><small>Monday&ndash;Friday, 8:00 AM &ndash; 5:00 PM</small></div>
+<div class="card"><div class="big">🧑‍🏫</div><h3>Admission Office</h3><small> 0906 444 0876</small></div></div>
+<div class="card" style="margin-top:18px"><h3>Send us a message</h3><input class="t" id="nm" placeholder="Your name"><textarea id="ms" rows="3" placeholder="Your question"></textarea><button class="btn" id="sd">Send via email ✉️</button></div>
+<div class="map-photo">
+    <img src="school-map.jpg"
+         alt="Map showing the location of Toledo City Science High School">
+</div>
+<div class="row map-button-row">
+    <a class="btn" target="_blank" rel="noopener"
+       href="https://www.google.com/maps/search/?api=1&query=Toledo+City+Science+High+School">
+        📍 Open in Google Maps
+    </a>
+</div></div></div>
+</main>
+<footer>
+    <img src="logo.jpg" alt="TCSHS Logo" class="footer-logo">
+    <p>© Toledo City Science High School · Curiosity. Excellence. Service.</p>
+    <button id="sx" title="?">⚗</button>
+</footer>
+<div id="md"><div id="mc"></div></div><canvas id="cv"></canvas>
+<button id="science-fact-btn" title="Discover a Science Fact">
+    🧪 Science Fact
+</button>
+
+<!-- NEW FEATURE: BACK TO TOP -->
+<button id="back-to-top" title="Back to Top">↑</button>
+<script src="script.js"></script>
+</body></html>
